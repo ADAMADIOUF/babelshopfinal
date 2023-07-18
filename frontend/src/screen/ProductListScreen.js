@@ -66,7 +66,7 @@ const ProductListScreen = () => {
         </Row>
       ) : (
         <Link to={`/`} className='btn btn-light mb-4'>
-          Retour
+          Retourner
         </Link>
       )}
 

@@ -32,12 +32,12 @@ const HomeScreen = () => {
         </div>
       ) : (
         <Link to={`/`} className='btn btn-light mb-4'>
-          Go back
+          Retourner
         </Link>
       )}
       <h1>Produits les plus récents</h1>
       <Row>
-        {products.slice(0,4).map((product) => {
+        {products.slice(0, 4).map((product) => {
           return (
             <Col sm={12} md={6} lg={4} xl={3} key={product._id}>
               <Product product={product} />

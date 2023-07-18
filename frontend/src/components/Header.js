@@ -36,13 +36,13 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <Image src={logo} className='logo'/>
+              <Image src={logo} className='logo' />
             </Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
+            <Nav className='ms-auto '>
               <SearchProduct />
               <LinkContainer to='/tass'>
                 <Nav.Link>Tasses </Nav.Link>
@@ -64,7 +64,7 @@ const Header = () => {
                 <Nav.Link>
                   <FaShoppingCart /> Panier
                   {cartItems.length > 0 && (
-                    <Badge pill bg='danger' style={{ marginLeft: '5px' }}>
+                    <Badge pill bg='dark' style={{ marginLeft: '5px' }}>
                       {cartItems.reduce((a, c) => a + c.qty, 0)}
                     </Badge>
                   )}

@@ -106,7 +106,7 @@ const Deals = () => {
                           text={`${product.numReviews} avis`}
                         />
                       </Card.Text>
-                      <Card.Text as='h3'>${product.price}</Card.Text>
+                      <Card.Text as='h3'>{product.price} F CFA</Card.Text>
                     </Card.Body>
                   </Card>
                 </Link>
