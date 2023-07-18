@@ -1,13 +1,218 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.redPalette{
+  color:'#E57373';     
+ color: '#F44336';   
+ color:'#D32F2F';      
+color:'#FFCDD2';        
+  color: '#C62828';         
+  color: '#FBE9E9';    
+}
+.logo{
+  width: 200px;
+  height: 200px;
+}
+main {
+  min-height: 80vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #000000;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+.product-image {
+  height: 200px; /* Set the desired height */
+}
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.product-image{
+  height: 200px;
+}
+/* productCarousel.css */
+.product-image-carousel {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  background-color: black;
+}
+.bg-primary-carousel{
+  background-color: #000000;
+}
+/* Delivery.css */
+.delivery{
+  margin-top: 5rem;
+}
+.delivery-options {
+  border-left: 2px solid #E57373; /* Vertical line separator with red color */
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.delivery-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.red-icon {
+  color: red; /* Set the icon color to red */
+}
+.container-deals{
+  position: relative;
+}
+.offer-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* deals.css */
+.btn-slider {
+  background-color: black !important;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-slider:hover {
+  background-color: #333;  
+}
+
+/* Custom CSS for Banner component */
+.banner-row {
+  margin-top: 20px;
+   text-decoration:none!important;
+}
+
+.banner-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f8f8f8;
+ 
+}
+
+.banner-image-big {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.banner-image-small {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
+.banner-description {
+  text-align: center;
+  margin-top: 20px;
+  color: #000000;
+  
+}
+
+.banner-description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+ 
+}
+
+.banner-description p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  
+}
+/* Remove underline from h2 and p elements */
+.banner-description h2,
+.banner-description p {
+  text-decoration: none !important;
+}
+
+.banner-row {
+  margin-top: 20px;
+}
+
+.banner-image-big {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .banner-image-big {
+    height: 300px; /* Adjust the height as needed */
+  }
+}
+
+.banner-image-small {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .banner-image-small {
+    height: 300px; /* Adjust the height as needed (half of the big image height) */
+  }
+}
+/* Categories */
+.categories{
+  margin-top: 5rem;
+}
+.add-to-cart{
+  background-color: #000000 !important;
+}
+.whatsapp{
+  background-color: greenyellow !important;
+  color: #000000 !important;
+  border:  none !important;
+  text-transform: uppercase;
 }
